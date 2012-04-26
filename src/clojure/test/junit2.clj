@@ -119,6 +119,7 @@
                             "\n"
                             [(str "expected: " expected-str)
                              (str "  actual: " actual-str)
+                             (when (seq t/*testing-contexts*) (str "      in: "  (t/testing-contexts-str)))
                              (str "      at: " file ":" line)]))]
      (if message (str message "\n" detail) detail)))
   (finish-element tag false)

@@ -1,6 +1,8 @@
 # clojure-test-junit2
 
-Bugfix and modifications to standard clojure.test.junit
+Bugfix and modifications to standard clojure.test.junit.<br/>
+Fixes problem with wrong line numbers when using with-junit-output.<br/>
+Adds displaying of (testing "...") clauses when encountering error or failure.
 
 ## Usage
 
